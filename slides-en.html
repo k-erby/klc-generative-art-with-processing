@@ -28,8 +28,7 @@
       <div class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <h2>Get <br>Connected</h2>
-        <p><strong>Wifi:</strong> Wifi Network</p>
-        <p><strong>Password:</strong> Wifi Password</p>
+        <p>Find a computer and we'll start soon! </p>
         <hr>
 
 
@@ -81,11 +80,11 @@
 
           <!-- Intro + Example Projects + Guest Speaker (10am)
 
-        Project Ideation + Wireframing (10:15am)
+        Introduction (30 min)
 
-        Intro to HTML + CSS (10:45am)
+        Code-Along (1 hour)
 
-        Lunch (12:30pm)
+        Work Session (1.5 hours)
 
         Building time! (1:15pm)
 
@@ -106,7 +105,7 @@
 
         Break
 
-        Interactive Art <!--Insert activity name here -->
+        Interactive Emoji Art <!--Insert activity name here -->
 
       </script>
     </section>
@@ -159,8 +158,8 @@
     <section class="slide centered" data-markdown>
       <script type="text/template">
         #Today's Project
-        <iframe src="https://www.openprocessing.org/sketch/254313/embed/" width="500" height="500"></iframe>
-
+        <iframe src="https://www.openprocessing.org/sketch/266635/embed/" width="500" height="500"></iframe>
+        <iframe src="https://www.openprocessing.org/sketch/768576/embed/" width="600" height="600"></iframe>
       </script>
     </section>
 
@@ -424,11 +423,11 @@
       # Draw Something
 
       ``` processing
-      void setup() { //This is a comment
-        size(600,600); //Setup only happens one time
+      void setup() { // This is a comment
+        size(600,600); // Setup only happens one time
       }
 
-      void draw(){ //Draw loops over and over
+      void draw() { // Draw loops over and over
         ellipse(100,100,100,100);
       }
       ```
@@ -633,9 +632,9 @@
 
         Let's make it change using variables.
 
-        1. Name the variable e.g. <strong>grow</strong> (at the top!)
-        1. Assign a value (number) to <strong>grow</strong>
-        1. Replace a number in your code with <strong>grow</strong>
+        1. Name the variable e.g. <strong>stretchYValue</strong> (at the top!)
+        1. Assign a value (number) to <strong>stretchYValue</strong>
+        1. Replace a number in your code with <strong>stretchYValue</strong>
 
       </script>
     </section>
@@ -643,12 +642,12 @@
 <!--Slide 39-->
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Make it Grow!
+        # Make it Grow!
 
         Possible Solution:
 
         ``` processing
-        int grow = 1; // (1) Name our variable and assign a value
+        int stretchYValue = 1; // (1) Name our variable and assign a value
 
         void setup(){
           size(600,600);
@@ -659,12 +658,12 @@
           if(mousePressed == true){
             fill(20,200,200);
             noStroke();
-            grow = grow + 1; // (3) Make the variable increase by 1 each time
-            ellipse(mouseX,mouseY,20,grow); // (2) Replace a value with grow
+            stretchYValue = stretchYValue + 1; // (3) Make the variable increase by 1 each time
+            ellipse(mouseX, mouseY, 20, stretchYValue); // (2) Replace a value with grow
           }
           if(keyPressed == true){
             background(255);
-            grow = 1; // (4) Reset grow to 1 when the background clears
+            stretchYValue = 1; // (4) Reset grow to 1 when the background clears
           }
         }
         ```
